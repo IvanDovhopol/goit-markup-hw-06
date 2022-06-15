@@ -13,6 +13,7 @@
   --primory-logo-color: #2196f3;
   --secondary-logo-color: #000000;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --footer-form-color: rgba(255, 255, 255, 0.6);
   --header-contact-color: #757575;
   --feature-bc-icons: #f5f4fa;
   --icon-primory-color: #afb1b8;
@@ -554,6 +555,63 @@ ul {
 .footer-link-icons:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
+}
+
+/* ------------------ form-slogan---------------- */
+
+.form-slogan-text {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+}
+
+.form-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  color: var(--footer-form-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.form-label {
+  position: relative;
+}
+
+.form-label-text {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footer-form-color);
+}
+
+.form-button {
+  cursor: pointer;
+  padding: 10px 62px 10px 29px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--accent-button-text-color);
+
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* ---------------------- portfolio ----------------------*/
