@@ -767,7 +767,7 @@ ul {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
-
+  opacity: 1;
   transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
@@ -775,6 +775,10 @@ ul {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%);
 }
 
 .modal {
