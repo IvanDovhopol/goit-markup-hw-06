@@ -9,8 +9,6 @@
   --hero-background-color: #2f303a;
   --footer-background-color: #2f303a;
   --all-text-color: #757575;
-  --accent-color: #2196f3;
-  --primory-logo-color: #2196f3;
   --secondary-logo-color: #000000;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --footer-form-color: rgba(255, 255, 255, 0.6);
@@ -18,11 +16,14 @@
   --feature-bc-icons: #f5f4fa;
   --icon-primory-color: #afb1b8;
   --icon-secondary-color: #ffffff;
-  --border-color: #eeeeee;
+  --product-border-color: #eeeeee;
   --product-description-color: #ffffff;
-  --button-bcg-hover: rgba(33, 150, 243, 0.8);
+  --accent-color: #2196f3;
+  --light-accent: rgba(33, 150, 243, 0.8);
   --placeholder-color: rgba(117, 117, 117, 0.5);
+  /* animation */
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 250ms;
 }
 
 body {
@@ -112,7 +113,7 @@ ul {
 }
 
 .header-logo-blue {
-  color: var(--primory-logo-color);
+  color: var(--accent-color);
 }
 
 .header-list-nav {
@@ -134,7 +135,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--nav-text-color);
 
-  transition: color 250ms var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
 }
 
 .header-link:hover,
@@ -188,7 +189,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--header-contact-color);
 
-  transition: color 250ms var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
 }
 
 .header-link-contact:hover,
@@ -252,12 +253,12 @@ ul {
   border-radius: 4px;
   border: 1px solid transparent;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--button-bcg-hover);
+  background-color: var(--light-accent);
 }
 
 /* ------------------------ feature ------------------------*/
@@ -409,7 +410,7 @@ ul {
   border-radius: 50%;
   fill: var(--icon-primory-color);
 
-  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function), fill var(--duration) var(--timing-function);
 }
 
 .team-link-icons:hover,
@@ -450,7 +451,7 @@ ul {
   border: 1px solid #afb1b8;
   fill: var(--icon-primory-color);
 
-  transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: border-color var(--duration) var(--timing-function), fill var(--duration) var(--timing-function);
 }
 
 .clients-link:hover,
@@ -489,7 +490,7 @@ ul {
 }
 
 .footer-logo-blue {
-  color: var(--primory-logo-color);
+  color: var(--accent-color);
 }
 
 .footer-address {
@@ -513,7 +514,7 @@ ul {
   line-height: 1.71;
   color: var(--footer-contact-color);
 
-  transition: color 250ms var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
 }
 
 .footer-link:hover,
@@ -555,7 +556,7 @@ ul {
   fill: var(--icon-secondary-color);
   border-radius: 50%;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function);
 }
 
 .footer-link-icons:hover,
@@ -592,7 +593,7 @@ ul {
   border-radius: 4px;
   outline: transparent;
 
-  transition: border-color 250ms var(--timing-function);
+  transition: border-color var(--duration) var(--timing-function);
 }
 
 .footer-form-input:focus {
@@ -617,12 +618,12 @@ ul {
   border: transparent;
   border-radius: 4px;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function);
 }
 
 .footer-form-button:hover,
 .footer-form-button:focus {
-  background-color: var(--button-bcg-hover);
+  background-color: var(--light-accent);
 }
 
 .plane-icon {
@@ -659,8 +660,8 @@ ul {
   border-radius: 4px;
   border: 1px solid transparent;
 
-  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function),
-    box-shadow 250ms var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function),
+    box-shadow var(--duration) var(--timing-function);
 }
 
 .portfolio-button:hover,
@@ -687,7 +688,7 @@ ul {
   width: 100%;
   height: 100%;
 
-  transition: box-shadow 250ms var(--timing-function);
+  transition: box-shadow var(--duration) var(--timing-function);
 }
 
 .product-link:hover,
@@ -713,7 +714,7 @@ ul {
 
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(102%);
-  transition: transform 250ms var(--timing-function);
+  transition: transform var(--duration) var(--timing-function);
 }
 
 .product-link:hover .product-arise,
@@ -735,10 +736,10 @@ ul {
 }
 
 .product-content {
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
   padding: 20px 24px;
+  border-right: 1px solid var(--product-border-color);
+  border-bottom: 1px solid var(--product-border-color);
+  border-left: 1px solid var(--product-border-color);
 }
 
 .product-title-item {
@@ -766,7 +767,7 @@ ul {
 
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  transition: opacity var(--duration) var(--timing-function), visibility var(--duration) var(--timing-function);
 }
 
 .is-hidden {
@@ -804,7 +805,7 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
 
-  transition: fill 250ms var(--timing-function);
+  transition: fill var(--duration) var(--timing-function);
 }
 
 .modal-close:hover {
@@ -856,7 +857,7 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: border-color 250ms var(--timing-function);
+  transition: border-color var(--duration) var(--timing-function);
 }
 
 .modal-input:focus {
@@ -876,7 +877,7 @@ ul {
   left: 15px;
   transform: translateY(-50%);
 
-  transition: fill 250ms var(--timing-function);
+  transition: fill var(--duration) var(--timing-function);
 }
 
 .modal-input:focus + .modal-icon {
@@ -901,7 +902,7 @@ ul {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color 250ms var(--timing-function);
+  transition: border-color var(--duration) var(--timing-function);
 }
 
 .field-feedback:focus {
@@ -944,7 +945,8 @@ ul {
   border: 2px solid #212121;
   border-radius: 2px;
 
-  transition: background-color 250ms var(--timing-function), border-color 250ms var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function),
+    border-color var(--duration) var(--timing-function);
 }
 
 .checkbox-policy:focus + .icon-policy {
@@ -961,19 +963,16 @@ ul {
 }
 
 .link-policy {
-  transition: color 250ms var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
   color: var(--accent-color);
 }
 
 .link-policy:hover,
 .link-policy:focus {
-  color: rgba(33, 150, 243, 0.7);
+  color: var(--light-accent);
 }
 
 .modal-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 200px;
   height: 50px;
   margin: auto;
@@ -991,6 +990,7 @@ ul {
   border-radius: 4px;
 }
 
-.modal-button:hover {
-  background-color: var(--button-bcg-hover);
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--light-accent);
 }
