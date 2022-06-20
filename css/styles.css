@@ -107,13 +107,23 @@ ul {
   color: var(--secondary-logo-color);
 }
 
-.container-nav {
-  display: flex;
-  align-items: center;
+.header-logo:hover,
+.header-logo:focus {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .header-logo-blue {
   color: var(--accent-color);
+}
+
+.header-logo:hover .header-logo-blue,
+.header-logo:focus .header-logo-blue {
+  color: var(--light-accent);
+}
+
+.container-nav {
+  display: flex;
+  align-items: center;
 }
 
 .header-list-nav {
@@ -489,8 +499,18 @@ ul {
   color: #ffffff;
 }
 
+.footer-logo:hover,
+.footer-logo:focus {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .footer-logo-blue {
   color: var(--accent-color);
+}
+
+.footer-logo:hover .footer-logo-blue,
+.footer-logo:focus .footer-logo-blue {
+  color: var(--light-accent);
 }
 
 .footer-address {
@@ -503,6 +523,10 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   color: var(--address-text-color);
+}
+
+.footer-link-address:hover {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-item:not(:last-child) {
@@ -925,14 +949,6 @@ ul {
   color: var(--all-text-color);
 }
 
-.checkbox-policy {
-  position: absolute;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 .policy-thumb {
   display: flex;
   align-items: center;
@@ -949,6 +965,14 @@ ul {
 
   transition: background-color var(--duration) var(--timing-function),
     border-color var(--duration) var(--timing-function);
+}
+
+.checkbox-policy {
+  position: absolute;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .checkbox-policy:focus + .icon-policy {
