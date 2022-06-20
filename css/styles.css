@@ -19,6 +19,7 @@
   --product-border-color: #eeeeee;
   --product-description-color: #ffffff;
   --accent-color: #2196f3;
+  --light-accent-secondary: rgba(255, 255, 255, 0.8);
   --light-accent: rgba(33, 150, 243, 0.8);
   --placeholder-color: rgba(117, 117, 117, 0.5);
   /* animation */
@@ -105,6 +106,7 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   color: var(--secondary-logo-color);
+  transition: color var(--duration) var(--timing-function);
 }
 
 .header-logo:hover,
@@ -114,6 +116,7 @@ ul {
 
 .header-logo-blue {
   color: var(--accent-color);
+  transition: color var(--duration) var(--timing-function);
 }
 
 .header-logo:hover .header-logo-blue,
@@ -263,12 +266,13 @@ ul {
   border-radius: 4px;
   border: 1px solid transparent;
 
-  transition: background-color var(--duration) var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--light-accent);
+  color: var(--light-accent-secondary);
 }
 
 /* ------------------------ feature ------------------------*/
@@ -497,15 +501,17 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   color: #ffffff;
+  transition: color var(--duration) var(--timing-function);
 }
 
 .footer-logo:hover,
 .footer-logo:focus {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--light-accent-secondary);
 }
 
 .footer-logo-blue {
   color: var(--accent-color);
+  transition: color var(--duration) var(--timing-function);
 }
 
 .footer-logo:hover .footer-logo-blue,
@@ -523,10 +529,11 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   color: var(--address-text-color);
+  transition: color var(--duration) var(--timing-function);
 }
 
 .footer-link-address:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--light-accent-secondary);
 }
 
 .footer-item:not(:last-child) {
@@ -642,12 +649,13 @@ ul {
   border: transparent;
   border-radius: 4px;
 
-  transition: background-color var(--duration) var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function);
 }
 
 .footer-form-button:hover,
 .footer-form-button:focus {
   background-color: var(--light-accent);
+  color: var(--light-accent-secondary);
 }
 
 .plane-icon {
@@ -657,6 +665,12 @@ ul {
   padding-right: 28px;
 
   fill: var(--icon-secondary-color);
+  transition: fill var(--duration) var(--timing-function);
+}
+
+.footer-form-button:hover .plane-icon,
+.footer-form-button:focus .plane-icon {
+  fill: var(--light-accent-secondary);
 }
 
 /* ---------------------- portfolio ----------------------*/
